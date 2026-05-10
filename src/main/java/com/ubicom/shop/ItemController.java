@@ -27,6 +27,15 @@ public class ItemController {
         System.out.println(result.get(0).price);
         System.out.println(user.get(0).name);
         System.out.println(a.toString());
+        for(Users u : user)
+        {
+            if(u.getName().equals("남호영"))
+            {
+                System.out.println(u.getName());
+                System.out.println(u.getPhone());
+                System.out.println(u.getMajor());
+            }
+        }
         model.addAttribute("name", "비싼바지");
         model.addAttribute("user", user);
         return "list.html";

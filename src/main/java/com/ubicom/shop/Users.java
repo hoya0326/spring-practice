@@ -1,11 +1,15 @@
 package com.ubicom.shop;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 @Entity
 @Table(name = "users")
 @ToString
+@Getter
+@Setter
 public class Users{
 
     @Id
@@ -29,6 +33,7 @@ public class Users{
     public String phone;
 
     // getter/setter
+
 
 
 }
